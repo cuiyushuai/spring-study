@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>ts01-spring</module>
+        <module>ts01-spring-ioc</module>
     </modules>
 
     <dependencies>
