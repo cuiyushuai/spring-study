@@ -1,6 +1,6 @@
-import com.shuai.dao.UserDaoImol;
-import com.shuai.service.UserService;
 import com.shuai.service.UserServiceImpl;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @author Admin
@@ -9,10 +9,15 @@ import com.shuai.service.UserServiceImpl;
 public class MyTest {
   public static void main(String[] args) {
 
-    UserService userService = new UserServiceImpl();
+    //    UserService userService = new UserServiceImpl();
+    //
+    //    //
+    //    ((UserServiceImpl)userService).setUserDao(new UserDaoImol());
+    //    userService.getUserList();
 
-    //  
-    ((UserServiceImpl)userService).setUserDao(new UserDaoImol());
-    userService.getUserList();
+    ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+    UserServiceImpl userServiceImpl = (UserServiceImpl)context.getBean("userServiceImpl");
+    userServiceImpl.getUserList();
+
   }
 }

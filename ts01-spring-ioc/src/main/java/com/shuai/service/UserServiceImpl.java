@@ -1,6 +1,6 @@
 package com.shuai.service;
 
-import com.shuai.dao.UserDao;
+import com.shuai.bean.UserDao;
 
 /**
  * @author Admin

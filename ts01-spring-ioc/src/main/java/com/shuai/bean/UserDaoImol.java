@@ -1,10 +1,10 @@
-package com.shuai.dao;
+package com.shuai.bean;
 
 /**
  * @author Admin
  * @date 2022/10/9 15:55
  */
-public class UserDaoImol implements UserDao{
+public class UserDaoImol implements UserDao {
 
   @Override
   public void getUserList() {

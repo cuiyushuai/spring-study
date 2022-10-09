@@ -1,4 +1,4 @@
-package com.shuai.dao;
+package com.shuai.bean;
 
 /**
  * @author Admin

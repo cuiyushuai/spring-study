@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>ts01-spring-ioc</module>
+        <module>ts02-spring-ioc</module>
     </modules>
 
     <dependencies>
