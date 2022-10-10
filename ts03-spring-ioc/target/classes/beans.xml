@@ -4,13 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--    <bean id="user" class="com.shuai.bean.User">-->
-    <!--        <constructor-arg name="name" value="dddd"/>-->
-    <!--    </bean>-->
     <bean id="user" class="com.shuai.bean.User">
-
-        <constructor-arg type="java.lang.String" value="jjjjj"/>
-
+        <!-- 通过name方式直接使用 -->
+        <constructor-arg name="name" value="dddd"/>
     </bean>
+    <!--    <bean id="user" class="com.shuai.bean.User">-->
+    <!--        &lt;!&ndash; 通过类型方式 new对象 &ndash;&gt;-->
+    <!--        <constructor-arg type="java.lang.String" value="jjjjj"/>-->
+    <!--    </bean>-->
 
 </beans>
