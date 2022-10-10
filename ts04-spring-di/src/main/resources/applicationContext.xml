@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="com.shuai.bean.Address">
+        <property name="address" value="襄阳"/>
+    </bean>
+
+
+    <bean id="student" class="com.shuai.bean.Student">
+        <property name="name" value="帅气"/>
+        <property name="address" ref="address"/>
+
+
+        <property name="books">
+            <array>
+                <value>西游记</value>
+                <value>水浒传</value>
+                <value>三国演义</value>
+                <value>红楼梦</value>
+            </array>
+        </property>
+        <property name="card">
+            <map>
+                <entry key="A" value="a"/>
+                <entry key="B" value="b"/>
+                <entry key="C" value="c"/>
+            </map>
+        </property>
+        <property name="gname">
+            <set>
+                <value>LOL</value>
+                <value>LOL1</value>
+                <value>LOL2</value>
+            </set>
+        </property>
+        <property name="hobbys">
+            <list>
+                <value>学习</value>
+                <value>听歌</value>
+            </list>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="1">一</prop>
+                <prop key="2">二</prop>
+                <prop key="3">三</prop>
+            </props>
+
+        </property>
+
+    </bean>
+
+
+</beans>
