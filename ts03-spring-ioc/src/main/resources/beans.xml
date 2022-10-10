@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.shuai.bean.User">
+        <!-- 通过name方式直接使用 -->
+        <constructor-arg name="name" value="dddd"/>
+    </bean>
+    <!--    <bean id="user" class="com.shuai.bean.User">-->
+    <!--        &lt;!&ndash; 通过类型方式 new对象 &ndash;&gt;-->
+    <!--        <constructor-arg type="java.lang.String" value="jjjjj"/>-->
+    <!--    </bean>-->
+
+</beans>
