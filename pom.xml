@@ -14,6 +14,7 @@
         <module>ts03-spring-ioc</module>
         <module>ts04-spring-di</module>
         <module>ts05-spring-Autowired</module>
+        <module>ts06-spring-anno</module>
     </modules>
 
     <dependencies>
