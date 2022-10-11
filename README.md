@@ -37,7 +37,12 @@
 
 ## 注解说明
 
-- @**Component** 自动创建对象 相当于xml配置中”<bean id="user" class="com.shuai.bean.User"/>
+- @**Component** 自动创建对象、相当于xml配置中”<bean id="user" class="com.shuai.bean.User"/>
+- 我们在web开发中、按照mvc三层架构分层
+    - [Controller] @Controller
+    - [dao] @Repository
+    - [Service] @Service
+    - `这四个注解都一样、都代表将某个类注册到Spring容器中。`
 - @**Value**("帅气") 给内部字段赋值 相当于xml配置中”<property name="name" value="ssss"/>“
 - @**Autowired** 自动装配通过类型、名字。如果Autowired不能唯一自动装配上属性、则需要通过@Quqlifier(
   value="

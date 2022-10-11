@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component   // @Component 相当于 <bean id="user" class="com.shuai.bean.User"/>
 public class User {
 
-  @Value("djasuidfhsajk")   //   @Value("ssss") 相当于 <property name="name" value="ssss"/>
+  @Value("帅气")   //   @Value("ssss") 相当于 <property name="name" value="ssss"/>
 
   private String name;
 
