@@ -18,6 +18,7 @@
         <module>ts07-spring-appconfig</module>
         <module>ts08-spring-proxy</module>
         <module>ts09-spring-aop</module>
+        <module>ts10-spring-mybatis</module>
     </modules>
 
     <dependencies>
@@ -34,5 +35,15 @@
             <version>4.12</version>
         </dependency>
     </dependencies>
-
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
 </project>
