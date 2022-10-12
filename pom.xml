@@ -16,6 +16,8 @@
         <module>ts05-spring-Autowired</module>
         <module>ts06-spring-anno</module>
         <module>ts07-spring-appconfig</module>
+        <module>ts08-spring-proxy</module>
+        <module>ts09-spring-aop</module>
     </modules>
 
     <dependencies>

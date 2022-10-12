@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="userService" class="com.shuai.dao.UserServiceImpl"/>
+    <bean id="log" class="com.shuai.log.Log"/>
+
+    <!--方式三  注解-->
+    <bean id="log02" class="com.shuai.log.Log02"/>
+    <aop:aspectj-autoproxy/>
+
+    <!--方式一-->
+    <aop:config>
+        <aop:pointcut expression="execution(* com.shuai.dao.UserServiceImpl.*(..))" id="pointcut"/>
+        <!--执行环绕增加-->
+        <aop:advisor advice-ref="log" pointcut-ref="pointcut"/>
+    </aop:config>
+
+    <!--方式二-->
+    <bean id="log01" class="com.shuai.log.Log01"/>
+    <aop:config>
+        <aop:aspect ref="log01">
+            <!--切入点-->
+            <aop:pointcut id="poin" expression="execution(* com.shuai.dao.UserServiceImpl.*(..)) "/>
+
+            <aop:before method="before" pointcut-ref="poin"/>
+            <aop:after method="later" pointcut-ref="poin"/>
+        </aop:aspect>
+    </aop:config>
+</beans>
