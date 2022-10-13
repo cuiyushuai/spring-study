@@ -4,9 +4,9 @@
         "https://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <!--设置-->
-    <!--    <settings>-->
-    <!--        <setting name="" value=""/>-->
-    <!--    </settings>-->
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
     <!-- mybatis-config.xml  别名管理-->
     <typeAliases>
         <package name="com.shuai.bean"/>

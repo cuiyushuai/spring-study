@@ -19,6 +19,7 @@
         <module>ts08-spring-proxy</module>
         <module>ts09-spring-aop</module>
         <module>ts10-spring-mybatis</module>
+        <module>ts11-spring-transaction</module>
     </modules>
 
     <dependencies>
@@ -40,6 +41,7 @@
             <resource>
                 <directory>src/main/java</directory>
                 <includes>
+                    <include>**/*.properties</include>
                     <include>**/*.xml</include>
                 </includes>
                 <filtering>true</filtering>
