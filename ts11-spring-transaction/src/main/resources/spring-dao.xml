@@ -37,7 +37,7 @@
         <tx:attributes>
             <!--针对所有的方法-->
             <tx:method name="*" propagation="REQUIRES_NEW"/>
-            <!--针对每个方法也可以-->
+            <!--针对指定方法也可以-->
             <!--<tx:method name="add" propagation="REQUIRES_NEW"/>-->
         </tx:attributes>
     </tx:advice>
